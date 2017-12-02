@@ -1,15 +1,77 @@
-
 {
   "newMessage": [
-    { "name": "我是最新消息哦1", "url": "http://www.shujufenxi.com"},
-	{ "name": "我是最新消息哦2", "url": "http://www.shujufenxi.com"},
-	{ "name": "我是最新消息哦3", "url": "http://www.shujufenxi.com"},
-	{ "name": "今天产品特价", "url": "http://www.shujufenxi.com"},
-	{ "name": "1212产品特价", "url": "http://www.shujufenxi.com"},
-	{ "name": "免邮费全场", "url": "http://www.shujufenxi.com"}
+    {
+      "name": "我是最新消息哦1",
+      "url": "http://www.shujufenxi.com"
+    },
+    {
+      "name": "我是最新消息哦2",
+      "url": "http://www.shujufenxi.com"
+    },
+    {
+      "name": "我是最新消息哦3",
+      "url": "http://www.shujufenxi.com"
+    },
+    {
+      "name": "今天产品特价",
+      "url": "http://www.shujufenxi.com"
+    },
+    {
+      "name": "1212产品特价",
+      "url": "http://www.shujufenxi.com"
+    },
+    {
+      "name": "免邮费全场",
+      "url": "http://www.shujufenxi.com"
+    }
   ],
-  "comments": [
-    { "id": 1, "body": "some comment", "postId": 1 }
+  "users": [
+    {
+      "id": 1,
+      "name": "good"
+    },
+    {
+      "user": "23@",
+      "password": "123",
+      "id": 2
+    },
+    {
+      "user": "231@",
+      "password": "123",
+      "id": 3
+    },
+    {
+      "user": "vvzr@",
+      "password": "123456",
+      "id": 4
+    },
+    {
+      "user": "676@",
+      "password": "1",
+      "id": 5
+    },
+    {
+      "user": "676@",
+      "password": "1",
+      "id": 6
+    },
+    {
+      "user": "676@",
+      "password": "1",
+      "id": 7
+    },
+    {
+      "user": "123@",
+      "password": "123",
+      "id": 8
+    },
+    {
+      "user": "123@",
+      "password": "123",
+      "id": 9
+    }
   ],
-  "profile": { "name": "typicode" }
+  "profile": {
+    "name": "typicode"
+  }
 }
