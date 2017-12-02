@@ -1,19 +1,30 @@
 <template>
   <div>
-    <div class="dialog-wrap">
-      <div class="dialog-cover">
+    <div class="dialog-wrap" v-if="isShow">
+      <div class="dialog-cover"  @click="closeMyself">
       </div>
       <div class="dialog-content">
-        <a class="dialog-close" href="#">x</a>
+        <a class="dialog-close" href="#" @click="closeMyself">x</a>
         <slot>empty</slot>
       </div>
+
 
     </div>
   </div>
 </template>
 <script>
   export default {
-
+    props:{
+      isShow:{
+        type:Boolean,
+      default:false
+      }
+    },
+    methods:{
+      closeMyself(){
+        this.$emit('on-close')
+      }
+    }
   }
 </script>
 <style scoped>
@@ -21,8 +32,7 @@
     position: fixed;
     width: 100%;
     height:100%;
-    top: 0;
-    left:0;
+
   }
   .dialog-cover{
     background-color: rgba(0,0,0,.3);
@@ -30,9 +40,11 @@
     width: 100%;
     height:100%;
     z-index: 5;
+    top: 0;
+    left:0;
   }
   .dialog-content{
-    position: absolute;
+    position: fixed;
     top: 20%;
     left:50%;
     margin-left:-25%;
@@ -43,6 +55,7 @@
     border:2px solid #464068;
     background-color: #fff;
     z-index: 10;
+    overflow: auto;
   }
   .dialog-close{
     position: absolute;
