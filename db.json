@@ -1,0 +1,15 @@
+
+{
+  "newMessage": [
+    { "name": "我是最新消息哦1", "url": "http://www.shujufenxi.com"},
+	{ "name": "我是最新消息哦2", "url": "http://www.shujufenxi.com"},
+	{ "name": "我是最新消息哦3", "url": "http://www.shujufenxi.com"},
+	{ "name": "今天产品特价", "url": "http://www.shujufenxi.com"},
+	{ "name": "1212产品特价", "url": "http://www.shujufenxi.com"},
+	{ "name": "免邮费全场", "url": "http://www.shujufenxi.com"}
+  ],
+  "comments": [
+    { "id": 1, "body": "some comment", "postId": 1 }
+  ],
+  "profile": { "name": "typicode" }
+}
