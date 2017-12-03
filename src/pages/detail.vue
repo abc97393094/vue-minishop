@@ -2,6 +2,7 @@
   <div class="detail-wrap">
     <div class="detail-left">
       <div class="product-board">
+        <span>{{productIcon}}</span>
         <ul>
           <router-link v-for="item in this.products" :to="{path:item.path}" tag="li" active-class="active">
             {{item.name}}
@@ -22,7 +23,7 @@
       return{
         products:[{
           name:'数据统计',
-          path:'count',
+          path:'analysis',
           active:false
         },{
           name:'数据统计',
@@ -30,13 +31,18 @@
           active:false
         },{
           name:'数据统计',
-          path:'count',
+          path:'forecast',
           active:false
         },{
           name:'数据统计',
-          path:'count',
+          path:'publish',
           active:false
         }]
+      }
+    },
+    computed:{
+      productIcon(){
+        return this.$route.path;
       }
     }
   }
@@ -67,6 +73,9 @@
     text-align: left;
     padding: 10px 15px;
     cursor: pointer;
+  }
+  .active{
+    background-color: #2ecc71;
   }
 
 </style>

@@ -18,24 +18,26 @@ export default new Router({
       component:IndexPage
     },
     {
-      path:'detail',
+      path:'/detail/',
       component:DetailPage,
+      redirect:'/detail/analysis',
       children:[
         {
           path:'analysis',
           component:DeatilAnaPage
         },
         {
-          path:'foreast',
-          component:DeatilCouPage
+          path:'forecast',
+          component:DeatilForAnaPage
         },{
-        path:'count',
-        component:DeatilForAnaPage
+          path:'count',
+          component:DeatilCouPage
         },
         {
-        path:'publish',
-        component:DeatilPubAnaPage
+          path:'publish',
+          component:DeatilPubAnaPage
         }]
+
     }
   ]
 })

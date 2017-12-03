@@ -38,10 +38,7 @@
           <p class="item-desc">
             {{item.description}}
           </p>
-          <a class="buy" href="#">立即购买</a>
-
-
-
+          <a class="buy" :href="item.href">立即购买</a>
         </div>
       </div>
     </div>
@@ -131,19 +128,23 @@
         boardList:[{
           title:'开放产品',
           description:'开放产品是一款开发产品',
-          saleout:false
+          saleout:false,
+          href:'detail/analysis'
         },{
           title:'开放产品',
           description:'开放产品是一款开发产品',
-          saleout:false
+          saleout:false,
+          href:'detail/count'
         },{
           title:'开放产品',
           description:'开放产品是一款开发产品',
-          saleout:false
+          saleout:false,
+          href:'detail/forecast'
         },{
           title:'开放产品',
           description:'开放产品是一款开发产品',
-          saleout:false
+          saleout:false,
+          href:'detail/publish'
         }]
       }
     },
